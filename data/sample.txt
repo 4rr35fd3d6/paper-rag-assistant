@@ -1,0 +1,6 @@
+Python is useful.
+Python is powerful.
+AI needs Python.
+Python can help us build AI applications.
+AI applications need data.
+Data is important.

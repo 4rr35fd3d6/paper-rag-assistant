@@ -1,0 +1,4 @@
+method,experiment_count,mean_accuracy,max_accuracy,mean_loss,min_loss
+LEDC,6,86.73,93.4,0.68,0.41
+FedProx,6,83.35,90.1,0.81,0.52
+FedAvg,6,81.85,89.2,0.87,0.58

@@ -1,0 +1,5 @@
+method,alpha,round,global_acc,loss
+LEDC,0.1,30,91.8,0.48
+FedProx,0.1,30,88.9,0.63
+LEDC,0.1,20,87.4,0.69
+FedAvg,0.1,30,86.7,0.71

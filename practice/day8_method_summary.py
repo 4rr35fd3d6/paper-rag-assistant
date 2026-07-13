@@ -87,6 +87,7 @@ def save_summary(summary_df, output_file):
     # TODO 3：保存 CSV，不保存 DataFrame 行索引
     summary_df.to_csv(
         output_file,
+        # 删除行号
         index=False)
 
 

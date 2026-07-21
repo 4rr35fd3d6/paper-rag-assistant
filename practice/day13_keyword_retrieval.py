@@ -146,16 +146,14 @@ def retrieve_top_chunks(chunks, keywords, top_k=3):
             continue
         result=chunk.copy()
         result["score"] = score
-        result["matched_keywords"] = (
-            matched_keywords
-        )
+        result["matched_keywords"] =matched_keywords
         results.append(result)
-        results.sort(
+    results.sort(
             key=get_result_score,#按照分数排序
             reverse=True
         )
-        top_results = results[:top_k]#取前三.0
-        return top_results
+    top_results = results[:top_k]#取前三.0
+    return top_results
 
 
 def display_results(results):

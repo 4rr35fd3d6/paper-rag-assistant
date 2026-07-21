@@ -151,11 +151,11 @@ def retrieve_top_chunks(chunks, keywords, top_k=3):
         )
         results.append(result)
         results.sort(
-            key=get_result_score,
+            key=get_result_score,#按照分数排序
             reverse=True
         )
-        top_results = results[:top_k]
-    return results
+        top_results = results[:top_k]#取前三.0
+        return top_results
 
 
 def display_results(results):
@@ -280,7 +280,15 @@ def main():
     print("例如：数据 异质性")
     print("输入 q 可以退出程序。")
 
-    while True:
+# 获取输入
+# → 判断是否退出
+# → 判断是否为空
+# → 拆分关键词
+# → 检索
+# → 显示
+# → 保存
+# → 再次等待输入
+    while True:#无限循环
         query = input(
             "\n请输入检索关键词："
         ).strip()

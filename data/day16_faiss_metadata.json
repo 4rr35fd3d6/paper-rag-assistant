@@ -1,0 +1,8 @@
+{
+  "index_type": "IndexFlatIP",
+  "model_name": "BAAI/bge-small-zh-v1.5",
+  "embedding_dimension": 512,
+  "chunk_count": 3,
+  "source_sha256": "df56c9f63f7ab09a5047d0264ff72498c1e6c40d2b02e08a10206e024feb9d2d",
+  "normalize_embeddings": true
+}

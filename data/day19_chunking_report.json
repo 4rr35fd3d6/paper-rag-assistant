@@ -1,0 +1,41 @@
+{
+  "source_file": "sample_paper.pdf",
+  "chunking_method": "custom recursive character chunking",
+  "configuration": {
+    "chunk_size": 450,
+    "chunk_overlap": 80,
+    "minimum_chunk_size": 80,
+    "separators": [
+      "\n\n",
+      "\n",
+      "。",
+      "！",
+      "？",
+      "；",
+      ". ",
+      "! ",
+      "? ",
+      "; ",
+      "，",
+      ", ",
+      " ",
+      ""
+    ]
+  },
+  "pdf_page_count": 66,
+  "pages_with_chunks": 65,
+  "skipped_page_count": 1,
+  "skipped_page_numbers": [
+    66
+  ],
+  "total_chunk_count": 193,
+  "minimum_chunk_length": 3,
+  "maximum_chunk_length": 523,
+  "average_chunk_length": 392.8,
+  "expected_maximum_length": 531,
+  "oversized_chunk_count": 0,
+  "oversized_chunk_ids": [],
+  "ocr_review_page_numbers": [
+    66
+  ]
+}

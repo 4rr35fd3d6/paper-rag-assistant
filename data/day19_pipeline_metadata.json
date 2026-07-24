@@ -1,0 +1,24 @@
+{
+  "pipeline_version": 1,
+  "source_pdf": "sample_paper.pdf",
+  "source_pdf_sha256": "d69e0c805a851ad874796027b3407abe994235e71aa8ac08975d5f1d77004673",
+  "chunk_size": 450,
+  "chunk_overlap": 80,
+  "minimum_chunk_size": 80,
+  "separators": [
+    "\n\n",
+    "\n",
+    "。",
+    "！",
+    "？",
+    "；",
+    ". ",
+    "! ",
+    "? ",
+    "; ",
+    "，",
+    ", ",
+    " ",
+    ""
+  ]
+}

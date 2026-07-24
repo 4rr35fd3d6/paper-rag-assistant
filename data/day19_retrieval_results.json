@@ -1,0 +1,72 @@
+{
+  "pipeline": [
+    "PDF extraction",
+    "recursive chunking",
+    "BGE embedding",
+    "FAISS retrieval"
+  ],
+  "model_name": "BAAI/bge-small-zh-v1.5",
+  "index_type": "IndexFlatIP",
+  "top_k": 3,
+  "minimum_similarity": 0.3,
+  "index_vector_count": 193,
+  "embedding_dimension": 512,
+  "query": "这篇论文主要研究什么问题？",
+  "result_count": 3,
+  "results": [
+    {
+      "chunk_id": 14,
+      "source_file": "sample_paper.pdf",
+      "page_number": 7,
+      "page_index": 6,
+      "page_start": 7,
+      "page_end": 7,
+      "chunk_index_on_page": 2,
+      "chunk_count_on_page": 9,
+      "char_count": 451,
+      "overlap_char_count": 3,
+      "needs_ocr_review": false,
+      "source_reference": "sample_paper.pdf#page=7",
+      "content_sha256": "cc73a2076d31c867a699f012e3a966867f7036b777e77cf36faaf2e1fc31a9cb",
+      "content": "目 录\n第一章 绪论............................................................................................... 1\n1.1 研究背景及意义 ............................................................................... 1\n1.2 国内外相关研究现状 ....................................................................... 3\n1.2.1 类别分布异质性问题 ................................................................. 3\n1.2.2 客户端数据量不平衡问题 ......................................................... 4",
+      "faiss_id": 13,
+      "similarity": 0.5124
+    },
+    {
+      "chunk_id": 6,
+      "source_file": "sample_paper.pdf",
+      "page_number": 5,
+      "page_index": 4,
+      "page_start": 5,
+      "page_end": 5,
+      "chunk_index_on_page": 1,
+      "chunk_count_on_page": 6,
+      "char_count": 397,
+      "overlap_char_count": 0,
+      "needs_ocr_review": false,
+      "source_reference": "sample_paper.pdf#page=5",
+      "content_sha256": "3289e8488de418a39a931471cfe6be79ec383f465f2a2a83f6a77bb86c0c565c",
+      "content": "广东工业大学硕士学位论文\n\nABSTRACT\n\nFederated learning is an emerging machine learning paradigm that enables multiple\n\nclients to collaboratively train a global model without sharing raw data, thereby ensuring data\n\nprivacy. Specifically, the central server first distributes the initial global model to participat-\n\ning clients, each of which then trains the model using its local data. Upon completing local",
+      "faiss_id": 5,
+      "similarity": 0.5091
+    },
+    {
+      "chunk_id": 1,
+      "source_file": "sample_paper.pdf",
+      "page_number": 1,
+      "page_index": 0,
+      "page_start": 1,
+      "page_end": 1,
+      "chunk_index_on_page": 1,
+      "chunk_count_on_page": 1,
+      "char_count": 98,
+      "overlap_char_count": 0,
+      "needs_ocr_review": false,
+      "source_reference": "sample_paper.pdf#page=1",
+      "content_sha256": "4bcb98a3affc5a874072c7b622bb1302c0156424b1e3dc08424f08e26da1610d",
+      "content": "（专业学位）\n\n基于异质性感知聚类的联邦学习算\n法研究\n\n作 者 姓 名: 陈健\n\n导 师 姓 名: 陈家辉\n\n学科（专业）或领域名称: 网络与信息安全\n\n论 文 答 辩 年 月: 二〇二五年五月",
+      "faiss_id": 0,
+      "similarity": 0.5069
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+data/day19_pdf_chunks.json
+data/day19_pdf_pages.json
